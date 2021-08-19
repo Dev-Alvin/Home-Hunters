@@ -34,6 +34,10 @@
         display: none;
         flex-direction: column;
       }
+      .bottom-header p {
+        padding-left: 25px !important;
+        padding-right: 25px !important;
+      }
       .left-column{
         width: 100%;
       }
@@ -44,13 +48,18 @@
         padding: 7px 43px !important;
         font-size: 15px !important; 
       }
-      .app-store{
-        padding-right: 0 !important;
-        width: 100% !important; 
+      .app-icon img{
+        max-width: 110px;
+        width: 100%;
+        padding-left: 0 !important;
+        max-width: 300px !important;
+        display:block;
+        text-align: center;
       }
-      .app-anchor{
-        padding-right: 0 !important;
+      .app-icon img:nth-child(1) {
+        padding-bottom: 10px !important;
       }
+      
     }
   </style>
 
@@ -210,7 +219,7 @@
               <!-- Start of App DL -->
               <tr>
                 <td>
-                  <table class="app-area" width="100%" border="0" cellspacing="0" cellpadding="0" style="font-family: 'Roboto', sans-serif; background-color: #fff; background: #fff; padding-top: 80px; padding-bottom: 80px; padding-left: 20px; padding-right: 20px;">
+                  <table class="app-area" width="100%" border="0" cellspacing="0" cellpadding="0" style="font-family: 'Roboto', sans-serif; background-color: #fff; background: #fff; padding-top: 80px;padding-left: 20px; padding-right: 20px;">
                     <tr>
                       <td style="text-align: center;">
                         <i class="fas fa-home" style="padding-right:10px; font-size: 30px; color: #2d72dc; display: inline-block;"></i><h2 style="margin-top: 0px; margin-bottom: 25px; font-size: 25px; display: inline-block; color: #2d72dc; font-weight: 300;">HomeHunter</h2>
@@ -221,18 +230,74 @@
                         <p style="margin-top: 0; margin-bottom: 25px; font-size: 13px; font-weight: 500; color: #495057;">Download the HomeHunter App</p>
                       </td>
                     </tr>
-                    <tr align="center">
-                      <td align="left"style="padding-bottom: 25px; text-decoration: none; display: inline-block;">
-                        <a class="app-anchor" href="http://www.apple.com/ios/app-store/" style="padding-right: 15px; text-decoration: none; display: inline-block;">
-                          <img class="app-store" src="https://i.postimg.cc/vmMWcRhx/apple.png" alt="apple-store" style="width: 170px; height: 54px;">
-                        </a>
-                      </td>
-                      <td align="left" style="padding-bottom: 25px; text-decoration: none; display: inline-block;">
-                        <a class="app-anchor" href="http://play.google.com/store?hl=en_US" style="text-decoration: none; display: inline-block;">
-                          <img class="app-store" src="https://i.postimg.cc/d0BGCWNH/google.png" alt="google-play" style="width: 170px; height: 54px;">
-                        </a>
-                      </td>
-                    </tr>
+                  </table>
+                  </td>
+              </tr>
+              <!-- Start Two-columns -->
+              <tr>
+                <td style="padding: 35px 0 30px 0;">
+                   <table width="100%" style="border-spacing: 0;" border="0" cellspacing="0" cellpadding="0" role="presentation">
+                      <tr>
+                         <td class="two-columns" style="padding: 0;font-size: 0;text-align: center;">
+       
+                            <!--[if (gte mso 9)|(IE)]>
+                               <table width="100%"  style="border-spacing:0;" role="presentation">
+                                  <tr>
+                                  <td width="300" valign="top" style="padding: 0;">
+                            <![endif]-->
+       
+                            <table class="column" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0;vertical-align: top; width: 100%;max-width: 300px;display: inline-block;" role="presentation">
+                               <tr>
+                                  <td>
+                                     <table class="content" style="border-spacing: 0;text-align: left;" role="presentation">
+                                        <tr>
+                                           <td>
+                                              <a class="app-icon" href="https://example.com">
+                                                <img class="two-col-img" src="https://cdn.freebiesupply.com/logos/large/2x/google-play-badge-logo-png-transparent.png" alt="Man" width="280" style="max-width: 280px;" border="0">
+                                              </a>
+                                           </td>
+                                        </tr>
+                                     </table>
+                                  </td>
+                               </tr>
+                            </table>
+                            
+                            <!--[if (gte mso 9)|(IE)]>>
+                                  <td width="300" valign="top" style="padding: 0;"></td>
+                            <![endif]-->
+       
+                            <table class="column" border="0" cellspacing="0" cellpadding="0" style="border-spacing: 0;vertical-align: top; width: 100%;max-width: 300px;display: inline-block;" role="presentation">
+                               <tr>
+                                  <td >
+                                     <table class="content" style="border-spacing: 0;text-align: left;" role="presentation">
+                                        <tr>
+                                           <td style="text-align: center;">
+                                              <a class="app-icon" href="https://example.com">
+                                                 <img class="two-col-img" src="http://assets.stickpng.com/images/5a902db97f96951c82922874.png" alt="Man" width="250" style="max-width: 250px;padding-left: 15px;" border="0">
+                                              </a>
+                                           </td>
+                                        </tr>
+                                     </table>
+                                  </td>
+                               </tr>
+                            </table>         
+       
+                            <!--[if (gte mso 9)|(IE)]>
+                               </td>
+                               </tr>
+                               </table>
+                            <![endif]-->
+
+                         </td>
+                      </tr>
+                   </table>
+                </td>
+             </tr>
+             <!-- End Two-columns -->
+
+              <tr>
+                <td>
+                  <table class="left-column" width="100%" border="0" cellspacing="0" cellpadding="0" style="font-family: 'Roboto', sans-serif; background-color: #fff; background: #fff;padding-left: 20px; padding-right: 20px;">
                     <tr>
                       <td style="text-align: center;">
                         <a href="http://www.w3.org/MarkUp/1995-archive/Elements/A.html" style="text-decoration: none;">
@@ -240,23 +305,57 @@
                         </a>
                       </td>
                     </tr>
+                  </table>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <table class="right-column" width="100%" border="0" cellspacing="0" cellpadding="0" style="font-family: 'Roboto', sans-serif; background-color: #fff; background: #fff;padding-left: 20px; padding-right: 20px;">
                     <tr>
                       <td style="text-align: center;">
                         <a href="http://www.w3.org/MarkUp/1995-archive/Elements/A.html" style="text-decoration: none; margin-top: 0; margin-bottom: 25px; font-size: 12px; font-weight: 700; color: #2d72dc; text-align: center;">Contact Us</a>
                         <span style="color: #2d72dc; padding-left: 5px; padding-right: 5px;">|</span>
                         <a href="http://www.w3.org/MarkUp/1995-archive/Elements/A.html" style="text-decoration: none; margin-top: 0; margin-bottom: 25px; font-size: 12px; font-weight: 700; color: #2d72dc; text-align: center;">Terms & Condition</a>
                       </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+
+
+
+              <tr>
+                <td>
+                  <table class="app-area" width="100%" border="0" cellspacing="0" cellpadding="0" style="font-family: 'Roboto', sans-serif; background-color: #fff; background: #fff;padding-left: 20px; padding-right: 20px;">
                     <tr>
                       <td style="text-align: center; padding-bottom: 20px;">
                         <a href="http://www.w3.org/MarkUp/1995-archive/Elements/A.html" style="text-decoration: none; margin-top: 0; margin-bottom: 25px; font-size: 12px; font-weight: 700; color: #2d72dc; text-align: center;">Privacy Statement</a>
                       </td>
                     </tr>
+                  </table>
+                </td>
+              </tr>
+
+
+              <tr>
+                <td>
+                  <table class="app-area" width="100%" border="0" cellspacing="0" cellpadding="0" style="font-family: 'Roboto', sans-serif; background-color: #fff; background: #fff;padding-left: 20px; padding-right: 20px;">
                     <tr>
                       <td style="text-align: center;">
                         <p style="margin-top: 0; margin-bottom: 5px; font-size: 12px; font-weight: 300; color: #9A9A99; text-align: center;">This email was sent to joe@somewhere@gyes.com</p>
                         <p style="margin-top: 0; margin-bottom: 25px; font-size: 12px; font-weight: 300; color: #9A9A99; text-align: center;">Prices and availability may change depending on dates and location.</p>
                       </td>
                     </tr>
+                  </table>
+                </td>
+              </tr>
+
+
+
+              <tr>
+                <td>
+                  <table class="app-area" width="100%" border="0" cellspacing="0" cellpadding="0" style="font-family: 'Roboto', sans-serif; background-color: #fff; background: #fff;padding-left: 20px; padding-right: 20px;">
                     <tr>
                       <td style="text-align: center;">
                         <a href="http://www.w3.org/MarkUp/1995-archive/Elements/A.html" style="cursor: pointer; text-decoration: none; margin-top: 0; margin-bottom: 25px; font-size: 12px; font-weight: 700; color: #2d72dc; text-align: center;">Unsubscribe</a>
